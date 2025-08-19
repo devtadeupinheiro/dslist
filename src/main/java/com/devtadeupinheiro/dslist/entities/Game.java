@@ -18,7 +18,9 @@ public class Game {
     private String platforms;
     private Double score;
     private String imgUrl;
+    @Column(columnDefinition = "TEXT") //Varchar só aceita 255 caracteres, o TEXT resolve este problema
     private String shortDescription;
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Game() {}
