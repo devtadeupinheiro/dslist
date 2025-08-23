@@ -19,7 +19,7 @@ public class GameDTO {
     public GameDTO() {}
 
     public GameDTO(Game entity) {
-        BeanUtils.copyProperties(entity, this);
+        BeanUtils.copyProperties(entity, this); //Porque usei o beanutils precisei fazer os setters, senão, seria somente os getters
     }
 
     public Long getId() {
